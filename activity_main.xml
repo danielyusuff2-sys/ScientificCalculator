@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <!-- Display Screen -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text=""
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:gravity="bottom|end"
+        android:padding="16dp"/>
+
+    <!-- Row 0: Scientific buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnSin"
+            style="@style/ScientificBtn" android:text="sin"/>
+        <Button android:id="@+id/btnCos"
+            style="@style/ScientificBtn" android:text="cos"/>
+        <Button android:id="@+id/btnTan"
+            style="@style/ScientificBtn" android:text="tan"/>
+        <Button android:id="@+id/btnPi"
+            style="@style/ScientificBtn" android:text="π"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnLn"
+            style="@style/ScientificBtn" android:text="ln"/>
+        <Button android:id="@+id/btnLog"
+            style="@style/ScientificBtn" android:text="log"/>
+        <Button android:id="@+id/btnSqrt"
+            style="@style/ScientificBtn" android:text="√"/>
+        <Button android:id="@+id/btnSquare"
+            style="@style/ScientificBtn" android:text="x²"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnInverse"
+            style="@style/ScientificBtn" android:text="1/x"/>
+        <Button android:id="@+id/btnAbs"
+            style="@style/ScientificBtn" android:text="|x|"/>
+        <Button android:id="@+id/btnPercent"
+            style="@style/ScientificBtn" android:text="%"/>
+        <Button android:id="@+id/btnPower"
+            style="@style/ScientificBtn" android:text="xʸ"/>
+    </LinearLayout>
+
+    <!-- Row: C, (, ), ÷ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnClear"
+            style="@style/FunctionBtn" android:text="C"/>
+        <Button android:id="@+id/btnOpenBracket"
+            style="@style/FunctionBtn" android:text="("/>
+        <Button android:id="@+id/btnCloseBracket"
+            style="@style/FunctionBtn" android:text=")"/>
+        <Button android:id="@+id/btnDivide"
+            style="@style/OperatorBtn" android:text="÷"/>
+    </LinearLayout>
+
+    <!-- Row: 7, 8, 9, × -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn7"
+            style="@style/NumberBtn" android:text="7"/>
+        <Button android:id="@+id/btn8"
+            style="@style/NumberBtn" android:text="8"/>
+        <Button android:id="@+id/btn9"
+            style="@style/NumberBtn" android:text="9"/>
+        <Button android:id="@+id/btnMultiply"
+            style="@style/OperatorBtn" android:text="×"/>
+    </LinearLayout>
+
+    <!-- Row: 4, 5, 6, - -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn4"
+            style="@style/NumberBtn" android:text="4"/>
+        <Button android:id="@+id/btn5"
+            style="@style/NumberBtn" android:text="5"/>
+        <Button android:id="@+id/btn6"
+            style="@style/NumberBtn" android:text="6"/>
+        <Button android:id="@+id/btnSubtract"
+            style="@style/OperatorBtn" android:text="−"/>
+    </LinearLayout>
+
+    <!-- Row: 1, 2, 3, + -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn1"
+            style="@style/NumberBtn" android:text="1"/>
+        <Button android:id="@+id/btn2"
+            style="@style/NumberBtn" android:text="2"/>
+        <Button android:id="@+id/btn3"
+            style="@style/NumberBtn" android:text="3"/>
+        <Button android:id="@+id/btnAdd"
+            style="@style/OperatorBtn" android:text="+"/>
+    </LinearLayout>
+
+    <!-- Row: +/-, 0, ., = -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btnNegate"
+            style="@style/FunctionBtn" android:text="+/−"/>
+        <Button android:id="@+id/btn0"
+            style="@style/NumberBtn" android:text="0"/>
+        <Button android:id="@+id/btnDot"
+            style="@style/NumberBtn" android:text="."/>
+        <Button android:id="@+id/btnEquals"
+            style="@style/EqualsBtn" android:text="="/>
+    </LinearLayout>
+
+</LinearLayout>
